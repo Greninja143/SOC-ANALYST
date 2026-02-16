@@ -1,3 +1,4 @@
+```
 SOC-Home-Lab-Splunk/
 │
 ├── README.md
@@ -37,3 +38,4 @@ SOC-Home-Lab-Splunk/
 │
 └── mitre-mapping/
     └── mitre-techniques.md
+
