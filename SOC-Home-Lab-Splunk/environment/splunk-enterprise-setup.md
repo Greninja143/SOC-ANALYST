@@ -7,16 +7,10 @@
 Go to Splunk official website
 Download **Windows 64-bit MSI installer**
 
-📸 **Screenshot to capture:**
+<img src="Images/splunk-enterprise.jpg" width="900">
 
 * Splunk download page
 * Selected Windows 64-bit version
-
-Save as:
-
-```
-splunk-download-page.png
-```
 
 ---
 
@@ -26,15 +20,7 @@ Double-click the `.msi` file.
 
 You will see the setup wizard.
 
-📸 Screenshot:
-
-* First installation screen
-
-Save as:
-
-```
-splunk-install-wizard.png
-```
+<img src="Images/splunk-install-wizard.png" width="900">
 
 ---
 
@@ -48,15 +34,9 @@ I accept the license agreement
 
 Click Next.
 
-📸 Screenshot:
+<img src="Images/splunk-license.png" width="900">
 
 * License agreement page
-
-Save as:
-
-```
-splunk-license.png
-```
 
 ---
 
@@ -71,15 +51,9 @@ Password: StrongPassword123!
 
 ⚠️ Use strong password.
 
-📸 Screenshot:
+<img src="Images/splunk-admin-setup.png" width="900">
 
 * Admin credential setup page (blur password)
-
-Save as:
-
-```
-splunk-admin-setup.png
-```
 
 ---
 
@@ -89,15 +63,7 @@ Click Install.
 
 Wait 2–5 minutes.
 
-📸 Screenshot:
-
-* Installation progress bar
-
-Save as:
-
-```
-splunk-install-progress.png
-```
+<img src="Images/splunk-install-progress.png" width="900">
 
 ---
 
@@ -114,15 +80,11 @@ Login with:
 * Username: admin
 * Password: (your password)
 
-📸 Screenshot:
+<img src="Images/splunk-login-page.png" width="900">
 
 * Splunk login page
 
 Save as:
-
-```
-splunk-login-page.png
-```
 
 ---
 
@@ -146,15 +108,11 @@ Set:
 Port: 9997
 ```
 
-📸 Screenshot:
+<img src="Images/splunk-receiving-port.png" width="900">
 
 * Receiving port configuration popup
 
 Save as:
-
-```
-splunk-receiving-port.png
-```
 
 ---
 
@@ -170,7 +128,7 @@ index=_internal
 
 If logs appear → Splunk working ✅
 
-📸 Screenshot:
+<img src="Images/splunk-admin-setup.png" width="900">
 
 * Search results page
 
