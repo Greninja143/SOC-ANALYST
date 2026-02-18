@@ -128,7 +128,7 @@ index=_internal
 
 If logs appear → Splunk working ✅
 
-<img src="Images/splunk-admin-setup.png" width="900">
+<img src="Images/splunk-internal-logs.png" width="900">
 
 * Search results page
 
