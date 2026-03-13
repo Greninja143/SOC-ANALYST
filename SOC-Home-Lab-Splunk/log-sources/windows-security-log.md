@@ -50,14 +50,15 @@ After configuration, the forwarder service was restarted to begin log collection
 🔍 Important Windows Event IDs
 
 The following security event IDs are monitored in the SOC lab.
-```
-Event ID	Description	Security Use Case
-4624	Successful Logon	User authentication tracking
-4625	Failed Logon	Brute-force attack detection
-4672	Special Privileges Assigned	Privileged account monitoring
-4688	Process Creation	Malware / suspicious process detection
-4697	Service Installed	Persistence detection
-```
+
+| Event ID |	Description                |	Security Use Case | 
+|-----------|-----------------------------|--------------------- |
+| 4624     | Successful Logon            | User authentication tracking |
+| 4625     | Failed Logon                | Brute-force attack detection |
+| 4672     | Special Privileges Assigned | Privileged account monitoring |
+| 4688     | Process Creation            | Malware / suspicious process detection |
+| 4697     | Service Installed           | Persistence detection |
+
 These events help analysts identify suspicious login behavior, privilege escalation attempts, and unauthorized system modifications.
 
 🚨 Detection Use Cases
