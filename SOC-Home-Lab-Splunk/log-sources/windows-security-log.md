@@ -1,4 +1,4 @@
-🖥️ Windows Security Logs Monitoring
+# 🖥️ Windows Security Logs Monitoring
 📌 Overview
 
 Windows Security Logs are one of the most important data sources for detecting malicious activity in enterprise environments. These logs record authentication events, privilege assignments, process creation, and system modifications.
@@ -6,23 +6,23 @@ Windows Security Logs are one of the most important data sources for detecting m
 In this SOC Home Lab, Windows Security Logs from the Windows 10 VM are forwarded to Splunk Enterprise running on the Windows 11 host.
 🧱 Log Collection Architecture
 
-Log Source
+### Log Source
 ```
 Windows Event Viewer → Security Log
 ```
-Log Forwarding
+### Log Forwarding
 ```
 Splunk Universal Forwarder
 ```
-Destination
+### Destination
 ```
 Splunk Enterprise (Windows 11 Host)
 IP: 192.168.56.1
 Port: 9997
 ```
-Splunk Index
+### Splunk Index
 
-windows
+### windows
 📂 Log Source Configuration
 
 Windows logs are collected through the Splunk Universal Forwarder configuration.
@@ -47,7 +47,7 @@ index = windows
 ```
 After configuration, the forwarder service was restarted to begin log collection.
 
-🔍 Important Windows Event IDs
+### 🔍 Important Windows Event IDs
 
 The following security event IDs are monitored in the SOC lab.
 
@@ -61,12 +61,10 @@ The following security event IDs are monitored in the SOC lab.
 
 These events help analysts identify suspicious login behavior, privilege escalation attempts, and unauthorized system modifications.
 
-🚨 Detection Use Cases
-Brute Force Login Detection
-
-Detects multiple failed login attempts from the same source.
+### 🚨 Detection Use Cases
+Falid Login Attempt Detection
 ```
 index=windows EventCode=4625
-| stats count by Source_Network_Address, Account_Name
-| where count > 5
 ```
+
+![Lab Architecture](../architecture/Example%201.png)
